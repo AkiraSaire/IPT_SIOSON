@@ -1,0 +1,77 @@
+<!-- <button onclick="greet()">Hello</button>
+<script>
+    function greet(){
+        alert("hello world")
+    }
+</script> -->
+
+<!-- <div id="body1" style="width: auto; height: 100vh; background-color: aqua;"></div>
+<button onclick="changeColor()">Color</button>
+<script>
+    let box = 1;
+    function changeColor(){
+        if (box === 1) {
+            document.getElementById('body1').style.backgroundColor = 'black';
+            box = 2;
+        }
+        else if (box === 2)
+        document.getElementById('body1').style.backgroundColor = 'green';
+            box = 2;
+    }
+</script> -->
+<!-- <div id="body1" style="width: auto; height: 100vh; background-color: aqua;"></div>
+<button onclick="changeColor()">Color</button>
+<script>
+    
+    function changeColor(){
+        document.getElementById('body1').style.backgroundColor = 'red';
+    }
+</script> -->
+ <div id="body1"><!-- style="width: auto; height: 100vh; background-color: rgb(244, 249, 249);" -->
+    <div>
+        <input type="number" id="num1" placeholder="Enter first number">
+        <input type="number" id="num2" placeholder="Enter second number">
+        <button onclick="addNumbers()">click to add</button>
+        <p id="result"></p>
+        <button onclick="changeColor()">Color</button>
+    </div>
+</div>
+
+<script>
+        function addNumbers(){
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+
+            const sum = num1 + num2;
+
+            document.getElementById("result").textContent = "Result: " + sum;
+        }
+
+
+
+        let box = 1;
+        function changeColor(){
+        // if (box === 1) {
+        //     document.getElementById('body1').style.backgroundColor = 'black';
+        //     box = 2;
+        // }
+        // else if (box === 2) {
+        //     document.getElementById('body1').style.backgroundColor = 'white';
+        //     box = 3;
+        // }
+        // else if (box === 3) {
+        //     document.getElementById('body1').style.backgroundColor = 'white';
+        //     box = 1;
+        // }
+
+        if(document.body.style.backgroundColor === 'white') {
+            document.body.style.backgroundColor = "black"
+        }
+        else {
+            document.body.style.backgroundColor = "white"
+        }
+            
+    }
+
+
+</script>

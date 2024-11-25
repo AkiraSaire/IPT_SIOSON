@@ -1,0 +1,119 @@
+
+body {
+    margin: 0;
+  
+}
+header{
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3b5998;
+    
+}
+header > div {
+    width: 80%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+header > div > diV{
+    height: 100%;
+    width: 10%;
+}
+header > div > div > img{
+    height: 100%;
+}
+header > div > nav > ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+header > div > nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+h2 {
+    text-align: justify;
+    list-style: none;
+    line-height: 5px;
+}
+.bg-con {
+    /* From https://css.glass */
+    margin: 0;
+background: rgba(17, 17, 18, 0.34);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.9px);
+-webkit-backdrop-filter: blur(6.9px);
+width: 90%;
+height: auto;
+margin-left: 70px;
+margin-bottom: 50px;
+padding: 15px 35px;
+}
+
+.gallery-container {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #3d5588, #6610f2);
+    color: white;
+}
+
+.gallery-description {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 300px;
+    border: 5px solid white;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #3b5998;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+ 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+footer .footer-content > .footers {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
